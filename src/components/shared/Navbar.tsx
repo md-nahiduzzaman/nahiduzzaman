@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/sheet";
 
 import { ModeToggle } from "../mode-toggle";
+import Link from "next/link";
 
 // import {
 //   DropdownMenu,
@@ -48,7 +49,7 @@ const Navbar = () => {
             </div>
             <div>
               <div className="flex items-center">
-                <a
+                <Link
                   className={cn(
                     "text-muted-foreground",
                     navigationMenuTriggerStyle,
@@ -56,12 +57,12 @@ const Navbar = () => {
                       variant: "ghost",
                     })
                   )}
-                  href="#"
+                  href="/"
                 >
                   HOME
-                </a>
+                </Link>
 
-                <a
+                <Link
                   className={cn(
                     "text-muted-foreground",
                     navigationMenuTriggerStyle,
@@ -69,11 +70,11 @@ const Navbar = () => {
                       variant: "ghost",
                     })
                   )}
-                  href="#"
+                  href="/projects"
                 >
                   PROJECTS
-                </a>
-                <a
+                </Link>
+                <Link
                   className={cn(
                     "text-muted-foreground",
                     navigationMenuTriggerStyle,
@@ -81,10 +82,22 @@ const Navbar = () => {
                       variant: "ghost",
                     })
                   )}
-                  href="#"
+                  href="/blog"
                 >
                   BLOG
-                </a>
+                </Link>
+                <Link
+                  className={cn(
+                    "text-muted-foreground",
+                    navigationMenuTriggerStyle,
+                    buttonVariants({
+                      variant: "ghost",
+                    })
+                  )}
+                  href="/contact"
+                >
+                  CONTACT
+                </Link>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -170,16 +183,19 @@ const Navbar = () => {
                     <SheetTitle></SheetTitle>
                   </SheetHeader>
                   <div className="flex flex-col gap-4 mt-6 mb-6">
-                    <a href="#" className="font-semibold">
+                    <Link href="/" className="font-semibold">
                       Home
-                    </a>
+                    </Link>
 
-                    <a href="#" className="font-semibold">
+                    <Link href="/projects" className="font-semibold">
                       Projects
-                    </a>
-                    <a href="#" className="font-semibold">
+                    </Link>
+                    <Link href="/blog" className="font-semibold">
                       Blog
-                    </a>
+                    </Link>
+                    <Link href="/contact" className="font-semibold">
+                      Contact
+                    </Link>
                   </div>
 
                   <div className="flex flex-col gap-3">
