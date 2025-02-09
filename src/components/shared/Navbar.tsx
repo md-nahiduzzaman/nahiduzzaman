@@ -1,4 +1,4 @@
-import { Menu, ShoppingBag } from "lucide-react";
+import { Menu } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
@@ -11,7 +11,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import Image from "next/image";
+
 import { ModeToggle } from "../mode-toggle";
 
 // import {
