@@ -1,4 +1,4 @@
-import { Menu } from "lucide-react";
+import { LogIn, Menu } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
@@ -102,11 +102,12 @@ const Navbar = () => {
             </div>
             <div className="flex items-center gap-4">
               <ModeToggle />
-              <Button variant="outline" size="lg">
-                Resume
+
+              <Button variant="outline" size="icon">
+                <LogIn className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
               </Button>
               <Button variant="outline" size="lg">
-                Log in
+                Resume
               </Button>
             </div>
 
